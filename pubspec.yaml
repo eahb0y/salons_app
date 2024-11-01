@@ -1,0 +1,55 @@
+name: salons_app
+description: "simple app for showing nearest salons"
+# The following line prevents the package from being accidentally published to
+# pub.dev using `flutter pub publish`. This is preferred for private packages.
+publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.5.4
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  flutter_localizations:
+    sdk: flutter
+  cupertino_icons: ^1.0.8
+  # di
+  get_it: ^8.0.0
+  dartz: ^0.10.1
+  formz: ^0.7.0
+  # keyboard dismiss
+  flutter_keyboard_visibility: ^6.0.0
+  # state manager bloc
+  flutter_bloc: ^8.1.6
+  # equations
+  equatable: ^2.0.5
+  #yandex_mapkit:
+  yandex_mapkit: ^4.1.0
+  #chuck_interceptor:
+  chuck_interceptor: ^2.1.8
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  flutter_lints: ^4.0.0
+
+
+flutter:
+
+  uses-material-design: true
+
+  assets:
+    - assets/svg/
+    - assets/png/
+
+flutter_intl:
+  enabled: true
+  class_name: AppLocalization
+  arb-dir: lib/localization/l10n
+  preferred-supported-locales:
+    - ru
+  use-deferred-loading: true
