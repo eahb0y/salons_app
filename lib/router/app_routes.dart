@@ -1,8 +1,11 @@
 import 'package:chuck_interceptor/chuck.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:salons_app/features/home/presentation/bloc/home_bloc.dart';
 import 'package:salons_app/features/home/presentation/page/home_page.dart';
 import 'package:salons_app/features/splash/presentation/page/splash_page.dart';
+import 'package:salons_app/injection%20container.dart';
 import 'package:salons_app/router/name_routes.dart';
 
 final rootNavigatorKey = GlobalKey<NavigatorState>();
@@ -25,9 +28,14 @@ class AppRoutes {
       case Routes.initial:
         return MaterialPageRoute(builder: (_) => const SplashPage());
       case Routes.home:
-        return MaterialPageRoute(builder: (_) => const HomePage());
+        return MaterialPageRoute(
+          builder: (_) => BlocProvider<HomeBloc>(
+            create: (context) => sl<HomeBloc>(),
+            child: const HomePage(),
+          ),
+        );
       default:
-        return MaterialPageRoute(builder: (_) => const HomePage());
+        return MaterialPageRoute(builder: (_) => HomePage());
     }
   }
 }

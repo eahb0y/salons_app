@@ -41,24 +41,23 @@ final lightTheme = appTheme.copyWith(
     secondary: ThemeColors.primaryColor,
     primary: ThemeColors.buttonColor,
   ),
-  datePickerTheme:   const DatePickerThemeData(
+  datePickerTheme: const DatePickerThemeData(
     headerBackgroundColor: LightThemeColors.grayButton,
-    headerForegroundColor:  LightThemeColors.white,
+    headerForegroundColor: LightThemeColors.white,
     shape: RoundedRectangleBorder(
       borderRadius: AppUtils.kBorderRadius2,
     ),
-   rangePickerHeaderBackgroundColor: LightThemeColors.grayButton,
-
+    rangePickerHeaderBackgroundColor: LightThemeColors.grayButton,
   ),
   listTileTheme: const ListTileThemeData(
     minVerticalPadding: 14,
     minLeadingWidth: 16,
     horizontalTitleGap: 12,
-    tileColor: LightThemeColors.textFieldBackGround,
+    tileColor: LightThemeColors.white,
     selectedColor: LightThemeColors.backgroundColor,
     selectedTileColor: LightThemeColors.backgroundColor,
     shape: RoundedRectangleBorder(
-      borderRadius: AppUtils.kBorderRadius4,
+      borderRadius: AppUtils.kBorderRadius10,
     ),
   ),
   tabBarTheme: const TabBarTheme(
@@ -72,51 +71,52 @@ final lightTheme = appTheme.copyWith(
     ),
   ),
   appBarTheme: const AppBarTheme(
-      elevation: 0,
-      centerTitle: false,
-      scrolledUnderElevation: 1,
-      foregroundColor: LightThemeColors.appBarColor,
-      backgroundColor: LightThemeColors.appBarColor,
-      surfaceTintColor: LightThemeColors.appBarColor,
-      shadowColor: Colors.black,
-      // shape: ContinuousRectangleBorder(
-      //   borderRadius: BorderRadius.only(
-      //     bottomLeft: Radius.circular(24),
-      //     bottomRight: Radius.circular(24),
-      //   ),
-      // ),
-      titleTextStyle: AppTextStyles.appBarTitle,
-      toolbarHeight: 56,
-      iconTheme: IconThemeData(color: ThemeColors.white),
-      titleSpacing: 0),
+    elevation: 0,
+    centerTitle: false,
+    scrolledUnderElevation: 1,
+    foregroundColor: LightThemeColors.appBarColor,
+    backgroundColor: LightThemeColors.appBarColor,
+    surfaceTintColor: LightThemeColors.appBarColor,
+    shadowColor: Colors.black,
+    // shape: ContinuousRectangleBorder(
+    //   borderRadius: BorderRadius.only(
+    //     bottomLeft: Radius.circular(24),
+    //     bottomRight: Radius.circular(24),
+    //   ),
+    // ),
+    titleTextStyle: AppTextStyles.appBarTitle,
+    toolbarHeight: 56,
+    iconTheme: IconThemeData(color: ThemeColors.white),
+    titleSpacing: 0,
+  ),
   inputDecorationTheme: const InputDecorationTheme(
     alignLabelWithHint: true,
     contentPadding: AppUtils.kPaddingVer16Hor14,
-    labelStyle: AppTextStyles.hintTextStyle,
-    floatingLabelStyle: AppTextStyles.hintTextStyle,
-    helperStyle: AppTextStyles.hintTextStyle,
-    hintStyle: AppTextStyles.hintTextStyle,
+    // labelStyle: AppTextStyles.hintTextStyle,
+    // floatingLabelStyle: AppTextStyles.hintTextStyle,
+    // helperStyle: AppTextStyles.hintTextStyle,
+    // hintStyle: AppTextStyles.hintTextStyle,
     errorBorder: OutlineInputBorder(
       borderRadius: BorderRadius.all(
-        Radius.circular(8),
+        Radius.circular(10),
       ),
       borderSide: BorderSide(color: ThemeColors.errorColor),
     ),
     border: OutlineInputBorder(
       borderRadius: BorderRadius.all(
-        Radius.circular(8),
+        Radius.circular(10),
       ),
       borderSide: BorderSide(color: LightThemeColors.textFieldBorderColor),
     ),
     enabledBorder: OutlineInputBorder(
       borderRadius: BorderRadius.all(
-        Radius.circular(8),
+        Radius.circular(10),
       ),
       borderSide: BorderSide(color: LightThemeColors.textFieldBorderColor),
     ),
     focusedBorder: OutlineInputBorder(
       borderRadius: BorderRadius.all(
-        Radius.circular(8),
+        Radius.circular(10),
       ),
       borderSide: BorderSide(
         color: ThemeColors.primaryColor,
@@ -124,19 +124,19 @@ final lightTheme = appTheme.copyWith(
     ),
     disabledBorder: OutlineInputBorder(
       borderRadius: BorderRadius.all(
-        Radius.circular(8),
+        Radius.circular(10),
       ),
       borderSide: BorderSide(color: LightThemeColors.textFieldBorderColor),
     ),
     focusedErrorBorder: OutlineInputBorder(
       borderRadius: BorderRadius.all(
-        Radius.circular(8),
+        Radius.circular(10),
       ),
       borderSide: BorderSide(color: ThemeColors.errorColor),
     ),
     filled: true,
     isDense: true,
-    prefixStyle: AppTextStyles.textField,
+    // prefixStyle: AppTextStyles.textField,
     fillColor: LightThemeColors.white,
     floatingLabelAlignment: FloatingLabelAlignment.start,
     // floatingLabelBehavior: FloatingLabelBehavior.always,

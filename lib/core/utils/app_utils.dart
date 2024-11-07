@@ -40,6 +40,13 @@ class AppUtils {
     endIndent: 16,
     color: LightThemeColors.borderColor,
   );
+  static const kPadHor15Divider = Divider(
+    height: 1,
+    thickness: 1,
+    indent: 15,
+    endIndent: 15,
+    color: LightThemeColors.borderColor,
+  );
   static const kPadHor12Divider = Divider(
     height: 1,
     thickness: 1,
@@ -205,6 +212,12 @@ class AppUtils {
     top: 12,
     bottom: 0,
   );
+  static const kPaddingLR15T70B0 = EdgeInsets.only(
+    left: 15,
+    right: 15,
+    top: 70,
+    bottom: 0,
+  );
   static const kPaddingTop10 = EdgeInsets.only(
     top: 10,
   );
@@ -284,8 +297,8 @@ class AppUtils {
       EdgeInsets.symmetric(horizontal: 16, vertical: 8);
   static const kPaddingHor8Ver4 =
       EdgeInsets.symmetric(horizontal: 8, vertical: 4);
-  static const kPaddingHor8Ver5 =
-      EdgeInsets.symmetric(horizontal: 8, vertical: 5);
+  static const kPaddingHor10Ver5 =
+      EdgeInsets.symmetric(horizontal: 10, vertical: 5);
   static const kPaddingHor8Ver6 =
       EdgeInsets.symmetric(horizontal: 8, vertical: 6);
   static const kPaddingHor8Ver10 =
@@ -334,6 +347,8 @@ class AppUtils {
       EdgeInsets.symmetric(vertical: 16, horizontal: 14);
   static const kPaddingVer20Hor22 =
       EdgeInsets.symmetric(vertical: 20, horizontal: 22);
+  static const kPaddingVer20Hor15 =
+      EdgeInsets.symmetric(vertical: 20, horizontal: 15);
   static const kPaddingVer28Hor28 =
       EdgeInsets.symmetric(vertical: 28, horizontal: 28);
 
